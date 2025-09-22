@@ -2,6 +2,7 @@
 import ModuleTitle from "./components/ModuleTitle";
 import SelfModule from "./components/SelfModule";
 import Clicker from "./components/Clicker";
+import Countdown from "./components/Countdown";
 
 const App = () => {
 
@@ -17,6 +18,7 @@ const App = () => {
             <SelfModule name="Jordan"/> */}
 
             <Clicker></Clicker>
+            <Countdown></Countdown>
         </>
     );
 };
