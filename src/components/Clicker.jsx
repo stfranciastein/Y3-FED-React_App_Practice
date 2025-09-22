@@ -6,11 +6,14 @@ const Clicker = () => {
     // This is a state variable. It is used to store the number of times the button has been clicked.
     // You need to specify the variable name, and then specify a function to update the variable.
     const [clickCount, setCount] = useState(0);
+    const handleClick = () => {
+        setCount(clickCount + 1);
+    }; 
 
     return (
         <>
-            <h2>You have clicked the button x times.</h2>
-            <button>Click Me</button>
+            <h2>You have clicked the button { clickCount } times.</h2>
+            <button onClick={handleClick}>Click Me</button>
         </>
     );
 };
