@@ -3,6 +3,10 @@ import ModuleTitle from "./components/ModuleTitle";
 import SelfModule from "./components/SelfModule";
 import Clicker from "./components/Clicker";
 import Countdown from "./components/Countdown";
+import LoginForm from "./components/LoginForm";
+import SignUp from "./components/SignUp";
+import Activity from "./components/Activity";
+import ListMe from "./components/ListMe";
 
 const App = () => {
 
@@ -17,8 +21,12 @@ const App = () => {
             <SelfModule name="Gillian"/>
             <SelfModule name="Jordan"/> */}
 
-            <Clicker></Clicker>
-            <Countdown></Countdown>
+            {/* <Clicker></Clicker> */}
+            {/* <Countdown></Countdown> */}
+            {/* <LoginForm></LoginForm> */}
+            {/* <SignUp></SignUp> */}
+            {/* <Activity></Activity> */}
+            <ListMe></ListMe>
         </>
     );
 };

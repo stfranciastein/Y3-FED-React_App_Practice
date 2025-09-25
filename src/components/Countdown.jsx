@@ -15,10 +15,17 @@ export default function Countdown() {
         let timer = setInterval(() => {
             setTime(time-1);
             console.log(time);
+            if (time <=0){
+                clearInterval(timer);
+                alert("Time's up!");
+
+            }
         }, 1000);
 
         return () => clearInterval(timer); 
         //This is a cleanup function. It will run when the component is unmounted or before the side effect runs again.
+        //Unmounting is either achieved when navigating away from the component
+        // i.e. going to another page or if the component is removed from the dom either manually or through conditional rendering.
 
 
     }, [time]);
